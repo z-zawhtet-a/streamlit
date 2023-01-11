@@ -34,6 +34,7 @@ import {
 import AppWithScreencast from "./App"
 import { StyledDataFrameOverlay } from "./styled-components"
 
+
 const ThemedApp = (): JSX.Element => {
   const defaultTheme = getDefaultTheme()
 
