@@ -73,7 +73,7 @@ from streamlit.elements.show import show as _show
 
 from streamlit.echo import echo as echo
 from streamlit.runtime.legacy_caching import cache as _cache
-from streamlit.elements.spinner import spinner as spinner
+# from streamlit.elements.spinner import spinner as spinner
 from streamlit.commands.page_config import set_page_config as set_page_config
 from streamlit.commands.execution_control import (
     stop as stop,

@@ -34,7 +34,7 @@ from typing_extensions import Protocol, runtime_checkable
 import streamlit as st
 from streamlit import runtime, type_util, util
 from streamlit.elements import NONWIDGET_ELEMENTS, WIDGETS
-from streamlit.elements.spinner import spinner
+# from streamlit.elements.spinner import spinner
 from streamlit.logger import get_logger
 from streamlit.proto.Block_pb2 import Block
 from streamlit.runtime.caching.cache_errors import (
@@ -424,8 +424,8 @@ def create_cache_wrapper(cached_func: CachedFunction) -> Callable[..., Any]:
             return return_value
 
         if cached_func.show_spinner or isinstance(cached_func.show_spinner, str):
-            with spinner(message):
-                return get_or_create_cached_value()
+            # with spinner(message):
+            return get_or_create_cached_value()
         else:
             return get_or_create_cached_value()
 
